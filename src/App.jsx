@@ -11,9 +11,19 @@ function App() {
       <h1 className='text-2xl font-semibold'>Coffee Machine</h1>
       <span className='text-[8rem]'>☕</span>
       <h2 className='text-xl'>Water: {water}</h2>
-      <button className='btn btn-sm btn-primary'>Add</button>
+      <button
+        className='btn btn-sm btn-primary'
+        onClick={() => setWater(water + 1)}
+      >
+        Add
+      </button>
       <h2 className='text-xl'>Coffee: {coffee}</h2>
-      <button className='btn btn-sm btn-warning'>Add</button>
+      <button
+        className='btn btn-sm btn-warning'
+        onClick={() => setCoffee(coffee + 1)}
+      >
+        Add
+      </button>
     </div>
   );
 }
