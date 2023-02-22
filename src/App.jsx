@@ -7,10 +7,10 @@ function App() {
   });
 
   function setWater() {
-    // setBrew({
-    //   ...brew,
-    //   water: brew.water + 1,
-    // });
+    setBrew({
+      ...brew,
+      water: brew.water + 1,
+    });
   }
 
   function setCoffee() {
